@@ -1,91 +1,79 @@
-
-name: Wellness Tourism MLOps Pipeline
+name: Tourism Project Pipeline
 
 on:
   push:
     branches:
       - main  # Automatically triggers on push to the main branch
+  workflow_dispatch:  # lets you click "Run workflow" in the Actions tab
+
+permissions:
+  contents: write
 
 jobs:
+
   register-dataset:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: "3.11"
       - name: Install Dependencies
-        run: pip install -r mlops/deployment/requirements.txt
-      - name: Upload Dataset to Hugging Face Hub
-        env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: python mlops/model_building/data_register.py
+        run: <add_code_here>
+      - name: Register Dataset
+        run: <add_code_here>
+      - name: Upload Registered Dataset
+        uses: actions/upload-artifact@v4
+        with:
+          name: registered-data
+          path: tourism_project/data/tourism.csv
 
   data-prep:
     needs: register-dataset
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: "3.11"
       - name: Install Dependencies
-        run: pip install -r mlops/deployment/requirements.txt
+        run: <add_code_here>
       - name: Run Data Preparation
-        env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: python mlops/model_building/prep.py
-      # We upload the data folder so 'train' job can use the split files
-      - name: Upload Prepared Data
+        run: <add_code_here>
+      - name: Upload Train Test Splits
         uses: actions/upload-artifact@v4
         with:
-          name: prepared-data
-          path: mlops/data/
+          name: data-splits
+          path: |
+            Xtrain.csv
+            Xtest.csv
+            ytrain.csv
+            ytest.csv
 
-  model-training:
+  model-traning:
     needs: data-prep
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: "3.11"
       - name: Install Dependencies
-        run: pip install -r mlops/deployment/requirements.txt
-      - name: Download Prepared Data
+        run: <add_code_here>
+      - name: Download Train Test Splits
         uses: actions/download-artifact@v4
         with:
-          name: prepared-data
-          path: mlops/data/
-      - name: Run Model Training
-        env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          # We run MLflow in local file mode for the runner
+          name: data-splits
+      - name: Start MLflow Server
         run: |
-          mkdir -p mlruns
-          python mlops/model_building/train.py
-      # Optional: Upload MLflow logs as an artifact to view locally later
-      - name: Upload MLflow Results
-        uses: actions/upload-artifact@v4
-        with:
-          name: mlflow-logs
-          path: mlruns/
-
-  deploy-hosting:
-    runs-on: ubuntu-latest
-    needs: [model-training,data-prep,register-dataset]
-    steps:
-      - uses: actions/checkout@v3
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.9'
-      - name: Install Dependencies
-        run: pip install -r mlops/deployment/requirements.txt
-      - name: Push files to Frontend Hugging Face Space
-        env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: python mlops/hosting/hosting.py
+          nohup mlflow ui --host 0.0.0.0 --port 5000 &  # Run MLflow UI in the background
+          sleep 5  # Wait for a moment to let the server starts
+      - name: Model Building
+        run: <add_code_here>
+      - name: Commit Trained Model
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add <add_code_here>   # path to the saved model file
+          git commit -m "Add trained model [skip ci]" || echo "No changes to commit"
+          git push
