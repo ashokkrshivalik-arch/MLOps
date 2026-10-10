@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/e6e3d5f154114557b511cc51a9b5d25f/artifacts
+end_time: 1791616758292
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: e6e3d5f154114557b511cc51a9b5d25f
+run_name: salty-shrew-714
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791616757802
+status: 3
+tags: []
+user_id: root
