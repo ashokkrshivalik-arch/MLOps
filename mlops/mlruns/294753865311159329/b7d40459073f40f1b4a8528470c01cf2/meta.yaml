@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/b7d40459073f40f1b4a8528470c01cf2/artifacts
+end_time: 1791614824682
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: b7d40459073f40f1b4a8528470c01cf2
+run_name: brawny-mouse-429
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614824336
+status: 3
+tags: []
+user_id: root
