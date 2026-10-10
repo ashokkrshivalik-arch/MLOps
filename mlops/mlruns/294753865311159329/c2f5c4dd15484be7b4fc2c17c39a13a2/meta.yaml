@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/c2f5c4dd15484be7b4fc2c17c39a13a2/artifacts
+end_time: 1791616754463
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: c2f5c4dd15484be7b4fc2c17c39a13a2
+run_name: industrious-calf-973
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791616753968
+status: 3
+tags: []
+user_id: root
