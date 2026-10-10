@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/97db7e0c615a4b7f81a9acb8dc19a0ed/artifacts
+end_time: 1791616756110
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 97db7e0c615a4b7f81a9acb8dc19a0ed
+run_name: puzzled-turtle-149
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791616755628
+status: 3
+tags: []
+user_id: root
