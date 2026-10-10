@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/7398044a182045bca085e90b7726c867/artifacts
+end_time: 1791616748825
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 7398044a182045bca085e90b7726c867
+run_name: unique-jay-529
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791616748415
+status: 3
+tags: []
+user_id: root
