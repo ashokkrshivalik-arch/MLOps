@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/f6f2a891c5ab49d3b95c2bdb2aefdf8c/artifacts
+end_time: 1791614823218
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: f6f2a891c5ab49d3b95c2bdb2aefdf8c
+run_name: rogue-midge-905
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614822884
+status: 3
+tags: []
+user_id: root
