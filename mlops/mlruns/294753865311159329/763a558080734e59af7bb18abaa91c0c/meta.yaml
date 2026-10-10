@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/763a558080734e59af7bb18abaa91c0c/artifacts
+end_time: 1791614839218
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 763a558080734e59af7bb18abaa91c0c
+run_name: rogue-cow-220
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614838770
+status: 3
+tags: []
+user_id: root
