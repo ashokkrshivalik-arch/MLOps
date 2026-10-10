@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/49cb0982b8cb4b20ba3be15bc691933c/artifacts
+end_time: 1791616739525
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 49cb0982b8cb4b20ba3be15bc691933c
+run_name: defiant-goose-584
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791616739088
+status: 3
+tags: []
+user_id: root
