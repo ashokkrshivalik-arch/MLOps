@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/c1879126dd8344359296cbf749c75b29/artifacts
+end_time: 1791616737808
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: c1879126dd8344359296cbf749c75b29
+run_name: amusing-seal-968
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791616737434
+status: 3
+tags: []
+user_id: root
