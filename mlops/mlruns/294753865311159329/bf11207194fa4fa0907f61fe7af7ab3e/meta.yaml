@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/bf11207194fa4fa0907f61fe7af7ab3e/artifacts
+end_time: 1791614835392
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: bf11207194fa4fa0907f61fe7af7ab3e
+run_name: respected-snipe-180
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614834994
+status: 3
+tags: []
+user_id: root
