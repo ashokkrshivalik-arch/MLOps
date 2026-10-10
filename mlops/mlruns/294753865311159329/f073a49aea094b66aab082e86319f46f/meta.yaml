@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/f073a49aea094b66aab082e86319f46f/artifacts
+end_time: 1791614844672
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: f073a49aea094b66aab082e86319f46f
+run_name: legendary-frog-654
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614844300
+status: 3
+tags: []
+user_id: root
