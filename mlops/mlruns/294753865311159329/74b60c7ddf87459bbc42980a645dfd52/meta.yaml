@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/74b60c7ddf87459bbc42980a645dfd52/artifacts
+end_time: 1791616762318
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 74b60c7ddf87459bbc42980a645dfd52
+run_name: magnificent-duck-163
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791616761815
+status: 3
+tags: []
+user_id: root
