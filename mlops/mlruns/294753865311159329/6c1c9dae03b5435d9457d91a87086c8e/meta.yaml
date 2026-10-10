@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/6c1c9dae03b5435d9457d91a87086c8e/artifacts
+end_time: 1791616766419
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 6c1c9dae03b5435d9457d91a87086c8e
+run_name: Optimized_XGB_Model_PROD_Standalone
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791616715544
+status: 3
+tags: []
+user_id: root
