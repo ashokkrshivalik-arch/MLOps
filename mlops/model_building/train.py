@@ -13,7 +13,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 # for model serialization
 import joblib
 
-# 1. Load data 
+# 1. Load data
 Xtrain = pd.read_csv("Xtrain.csv")
 Xtest  = pd.read_csv("Xtest.csv")
 ytrain = pd.read_csv("ytrain.csv").squeeze()
@@ -26,15 +26,15 @@ print("Datasets loaded successfully.")
 
 # 2. Define Feature Groups
 numeric_cols = [
-        'Age', 'CityTier', 'DurationOfPitch', 'NumberOfPersonVisiting', 
-        'NumberOfFollowups', 'PreferredPropertyStar', 'NumberOfTrips', 
-        'Passport', 'PitchSatisfactionScore', 'OwnCar', 
+        'Age', 'CityTier', 'DurationOfPitch', 'NumberOfPersonVisiting',
+        'NumberOfFollowups', 'PreferredPropertyStar', 'NumberOfTrips',
+        'Passport', 'PitchSatisfactionScore', 'OwnCar',
         'NumberOfChildrenVisiting', 'MonthlyIncome'
         ]
 
 
 categorical_cols = [
-        'TypeofContact', 'Occupation', 'Gender', 
+        'TypeofContact', 'Occupation', 'Gender',
         'ProductPitched', 'MaritalStatus', 'Designation'
         ]
 
@@ -44,7 +44,7 @@ preprocessor = make_column_transformer(
   (StandardScaler(), numeric_cols),
   (OneHotEncoder(handle_unknown='ignore'), categorical_cols)
   )"""
-  
+
 preprocessor = make_column_transformer(
         (StandardScaler(), numeric_cols),
         (OneHotEncoder(handle_unknown='ignore', sparse_output=False), categorical_cols),
