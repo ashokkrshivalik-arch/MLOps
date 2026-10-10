@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/a4812f9e8bd343999325b7ab70ca332f/artifacts
+end_time: 1791614832949
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: a4812f9e8bd343999325b7ab70ca332f
+run_name: incongruous-calf-842
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614832593
+status: 3
+tags: []
+user_id: root
