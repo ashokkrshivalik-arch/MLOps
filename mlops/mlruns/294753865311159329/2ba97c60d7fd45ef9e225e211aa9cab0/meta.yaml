@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/2ba97c60d7fd45ef9e225e211aa9cab0/artifacts
+end_time: 1791614846758
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 2ba97c60d7fd45ef9e225e211aa9cab0
+run_name: thoughtful-owl-928
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614846338
+status: 3
+tags: []
+user_id: root
