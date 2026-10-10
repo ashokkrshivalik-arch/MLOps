@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/962d0e2d8d3141b2af454cde301fcef4/artifacts
+end_time: 1791616746930
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 962d0e2d8d3141b2af454cde301fcef4
+run_name: defiant-vole-925
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791616746491
+status: 3
+tags: []
+user_id: root
