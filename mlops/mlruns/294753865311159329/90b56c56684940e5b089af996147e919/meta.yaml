@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/90b56c56684940e5b089af996147e919/artifacts
+end_time: 1791616760206
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 90b56c56684940e5b089af996147e919
+run_name: adaptable-calf-946
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791616759727
+status: 3
+tags: []
+user_id: root
