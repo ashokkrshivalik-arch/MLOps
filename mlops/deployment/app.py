@@ -1,4 +1,3 @@
-
 import os
 import streamlit as st
 import pandas as pd
@@ -20,14 +19,18 @@ def load_model():
         st.error(f"Model file not found: {model_path}")
         st.stop()
 
-    return joblib.load(model_path)
+    try:
+        return joblib.load(model_path)
+
+    except Exception as e:
+        st.error(f"Model loading failed: {type(e).__name__}: {e}")
+        st.stop()
 
 model = load_model()
 
-st.title("Tourism Package Prediction")
-st.success("Model loaded successfully!")
 
 st.title("🌴 Full Feature Wellness Tourism Predictor")
+st.success("Model loaded successfully!")
 st.write("Please fill in all 18 parameters to get an accurate prediction.")
 
 # 2. Complete Form with All 19 Features
@@ -96,10 +99,10 @@ if submit:
 
         st.divider()
         if prob >= 0.45:
-            st.success(f"### Result: 🎯 High Potential (Prob: {prob:.2%})")
+            st.success(f"### Result: f3af High Potential (Prob: {prob:.2%})")
             st.balloons()
         else:
-            st.warning(f"### Result: ⏳ Low Likelihood (Prob: {prob:.2%})")
+            st.warning(f"### Result: ⌓ Low Likelihood (Prob: {prob:.2%})")
 
     except Exception as e:
         st.error(f"Prediction Error: {e}")
