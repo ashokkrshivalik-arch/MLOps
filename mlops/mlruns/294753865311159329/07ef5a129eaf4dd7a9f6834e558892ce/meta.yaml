@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/07ef5a129eaf4dd7a9f6834e558892ce/artifacts
+end_time: 1791616742319
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 07ef5a129eaf4dd7a9f6834e558892ce
+run_name: grandiose-gnat-851
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791616741901
+status: 3
+tags: []
+user_id: root
