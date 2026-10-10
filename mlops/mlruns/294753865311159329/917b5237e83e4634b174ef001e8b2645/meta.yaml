@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/917b5237e83e4634b174ef001e8b2645/artifacts
+end_time: 1791616760719
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 917b5237e83e4634b174ef001e8b2645
+run_name: delightful-perch-305
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791616760230
+status: 3
+tags: []
+user_id: root
