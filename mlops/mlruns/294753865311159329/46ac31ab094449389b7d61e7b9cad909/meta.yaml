@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/46ac31ab094449389b7d61e7b9cad909/artifacts
+end_time: 1791616759710
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 46ac31ab094449389b7d61e7b9cad909
+run_name: resilient-hare-910
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791616759249
+status: 3
+tags: []
+user_id: root
