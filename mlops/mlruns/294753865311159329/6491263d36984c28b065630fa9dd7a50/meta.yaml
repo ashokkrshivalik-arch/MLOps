@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/6491263d36984c28b065630fa9dd7a50/artifacts
+end_time: 1791614832578
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 6491263d36984c28b065630fa9dd7a50
+run_name: puzzled-bug-90
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614832167
+status: 3
+tags: []
+user_id: root
