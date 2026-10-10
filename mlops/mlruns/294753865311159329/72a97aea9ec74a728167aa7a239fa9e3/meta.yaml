@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/72a97aea9ec74a728167aa7a239fa9e3/artifacts
+end_time: 1791614826924
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 72a97aea9ec74a728167aa7a239fa9e3
+run_name: auspicious-smelt-721
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614826573
+status: 3
+tags: []
+user_id: root
