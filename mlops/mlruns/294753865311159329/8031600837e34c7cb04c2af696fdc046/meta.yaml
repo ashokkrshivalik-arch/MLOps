@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/8031600837e34c7cb04c2af696fdc046/artifacts
+end_time: 1791614843124
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 8031600837e34c7cb04c2af696fdc046
+run_name: trusting-mule-872
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614842703
+status: 3
+tags: []
+user_id: root
