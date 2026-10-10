@@ -8,11 +8,23 @@ st.set_page_config(page_title="Tourism Predictor", layout="wide")
 
 # 1. Load Model
 # Load the model committed by the pipeline (sits next to this file)
-model_path = os.path.join(os.path.dirname(__file__), "best_medical_insurance_model_v1.joblib")
-model = joblib.load(model_path)
+@st.cache_resource
+def load_model():
+    model_path = os.path.join(
+        os.path.dirname(__file__),
+        "best_tourism_model_v1.joblib"
+    )
+
+    if not os.path.exists(model_path):
+        st.error(f"Model file not found: {model_path}")
+        st.stop()
+
+    return joblib.load(model_path)
+
+model = load_model()
 
 st.title("🌴 Full Feature Wellness Tourism Predictor")
-st.write("Please fill in all 19 parameters to get an accurate prediction.")
+st.write("Please fill in all 18 parameters to get an accurate prediction.")
 
 # 2. Complete Form with All 19 Features
 with st.form("prediction_form"):
