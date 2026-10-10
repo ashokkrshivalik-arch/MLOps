@@ -1,27 +1,31 @@
+
 import os
 import streamlit as st
 import pandas as pd
 import joblib
 
-# Ensure st.set_page_config() is the very first Streamlit command
-st.set_page_config(page_title="Tourism Predictor", layout="wide")
+st.set_page_config(
+    page_title="Tourism Predictor",
+    layout="wide"
+)
 
-# 1. Load Model
-# Load the model committed by the pipeline (sits next to this file)
 @st.cache_resource
 def load_model():
     model_path = os.path.join(
-        os.path.dirname(__file__),
+        os.path.dirname(os.path.abspath(__file__)),
         "best_tourism_model_v1.joblib"
     )
 
-    if not os.path.exists(model_path):
+    if not os.path.isfile(model_path):
         st.error(f"Model file not found: {model_path}")
         st.stop()
 
     return joblib.load(model_path)
 
 model = load_model()
+
+st.title("Tourism Package Prediction")
+st.success("Model loaded successfully!")
 
 st.title("🌴 Full Feature Wellness Tourism Predictor")
 st.write("Please fill in all 18 parameters to get an accurate prediction.")
