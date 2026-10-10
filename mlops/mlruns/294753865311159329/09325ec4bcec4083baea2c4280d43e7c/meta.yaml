@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/09325ec4bcec4083baea2c4280d43e7c/artifacts
+end_time: 1791614848416
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 09325ec4bcec4083baea2c4280d43e7c
+run_name: whimsical-shrike-115
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614848034
+status: 3
+tags: []
+user_id: root
