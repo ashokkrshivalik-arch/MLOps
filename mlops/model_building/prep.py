@@ -1,54 +1,92 @@
 
-# for data manipulation
+import os
 import pandas as pd
-# for data preprocessing and pipeline creation
 from sklearn.model_selection import train_test_split
-# for converting text data into numerical representation
-from sklearn.preprocessing import LabelEncoder
 
-df = pd.read_csv("/content/drive/MyDrive/Assignment10/mlops/data/tourism.csv")
+# 1. Define paths
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_DIR = os.path.dirname(BASE_DIR)
+DATA_DIR = os.path.join(PROJECT_DIR, "data")
+
+os.makedirs(DATA_DIR, exist_ok=True)
+
+RAW_PATH = os.path.join(DATA_DIR, "tourism.csv")
+
+# 2. Load dataset
+df = pd.read_csv(RAW_PATH)
+
 print("Dataset loaded successfully.")
+print("Original shape:", df.shape)
 
-# 2.1 Remove unnecessary columns
+# 3. Remove unnecessary columns
 print("Step 2: Performing data cleaning...")
 
-# Remove unnecessary columns -> customerID is Primary Key and there exists an unnamed column which appears to be Serial number. Both are not useful for modeling
-cols_to_drop = ['CustomerID', 'Unnamed: 0']
-df = df.drop(columns=[col for col in cols_to_drop if col in df.columns])
+cols_to_drop = ["CustomerID", "Unnamed: 0"]
 
-# 2.2 Standardize Categorical Values
-if 'Gender' in df.columns:
-  df['Gender'] = df['Gender'].replace('Fe Male', 'Female')
+df = df.drop(
+    columns=[col for col in cols_to_drop if col in df.columns]
+)
 
-if 'MaritalStatus' in df.columns:
-# Merging 'Single' into 'Unmarried' to simplify the categories
-  df['MaritalStatus'] = df['MaritalStatus'].replace('Single', 'Unmarried')
+# 4. Standardize categorical values
+if "Gender" in df.columns:
+    df["Gender"] = df["Gender"].replace(
+        {"Fe Male": "Female"}
+    )
 
-# 2.3 Label Encoding for categorical variables
-# This converts columns like 'Occupation' from strings to numbers
-cat_cols = df.select_dtypes(include=['object']).columns
-le = LabelEncoder()
-for col in cat_cols:
-  df[col] = le.fit_transform(df[col].astype(str))
-  print(f" Encoded column: {col}")
+if "MaritalStatus" in df.columns:
+    df["MaritalStatus"] = df["MaritalStatus"].replace(
+        {"Single": "Unmarried"}
+    )
 
-print("Step 3: Splitting into train and test sets...")
+# 5. Define target
+target_col = "ProdTaken"
 
-# Define target variable
-target_col = 'ProdTaken'
+if target_col not in df.columns:
+    raise ValueError(f"Target column {target_col} not found!")
 
-# Split into X (features) and y (target)
+# 6. Split features and target
 X = df.drop(columns=[target_col])
 y = df[target_col]
 
-# Perform train-test split
-# Stratified split to ensure equal proportion of buyers in both sets
+# Keep categorical features as strings.
+# OneHotEncoder in train.py will handle encoding.
+
+# 7. Train-test split
+print("Step 3: Splitting into train and test sets...")
+
 Xtrain, Xtest, ytrain, ytest = train_test_split(
-        X, y, test_size=0.2, random_state=42,stratify=y)
+    X,
+    y,
+    test_size=0.2,
+    random_state=42,
+    stratify=y
+)
 
-Xtrain.to_csv("Xtrain.csv", index=False)
-Xtest.to_csv("Xtest.csv", index=False)
-ytrain.to_csv("ytrain.csv", index=False)
-ytest.to_csv("ytest.csv", index=False)
+# 8. Save processed datasets
+Xtrain.to_csv(
+    os.path.join(DATA_DIR, "Xtrain.csv"),
+    index=False
+)
 
-print("Data prepared: train/test splits written.")
+Xtest.to_csv(
+    os.path.join(DATA_DIR, "Xtest.csv"),
+    index=False
+)
+
+ytrain.to_csv(
+    os.path.join(DATA_DIR, "ytrain.csv"),
+    index=False
+)
+
+ytest.to_csv(
+    os.path.join(DATA_DIR, "ytest.csv"),
+    index=False
+)
+
+print("\nData preparation completed successfully!")
+print("Training features:", Xtrain.shape)
+print("Testing features:", Xtest.shape)
+print("Training target:", ytrain.shape)
+print("Testing target:", ytest.shape)
+
+print("\nProcessed files saved in:", DATA_DIR)
