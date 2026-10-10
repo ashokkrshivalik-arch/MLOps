@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/605d77b8f2494b22b990d73daa2fc2a1/artifacts
+end_time: 1791616747399
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 605d77b8f2494b22b990d73daa2fc2a1
+run_name: bald-donkey-989
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791616746949
+status: 3
+tags: []
+user_id: root
