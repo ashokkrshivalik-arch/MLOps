@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/c29c8480fd374ac7a8da9e6d53356641/artifacts
+end_time: 1791616740019
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: c29c8480fd374ac7a8da9e6d53356641
+run_name: gaudy-goose-400
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791616739546
+status: 3
+tags: []
+user_id: root
