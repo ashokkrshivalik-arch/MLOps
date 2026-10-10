@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/6ca9d49b162e41dd945cd452bf49de12/artifacts
+end_time: 1791614840485
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 6ca9d49b162e41dd945cd452bf49de12
+run_name: sincere-ape-986
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614840056
+status: 3
+tags: []
+user_id: root
