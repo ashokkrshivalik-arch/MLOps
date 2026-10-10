@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/59e53534acb943b78a98fa029c6d6417/artifacts
+end_time: 1791614842672
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 59e53534acb943b78a98fa029c6d6417
+run_name: placid-grouse-907
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614842187
+status: 3
+tags: []
+user_id: root
