@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/0744264f577b493b98bd3009913f4143/artifacts
+end_time: 1791614847594
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 0744264f577b493b98bd3009913f4143
+run_name: resilient-lamb-874
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614847176
+status: 3
+tags: []
+user_id: root
