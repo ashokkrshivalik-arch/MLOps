@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/02336ae71b56409ebdb02135d7f6118a/artifacts
+end_time: 1791614845929
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 02336ae71b56409ebdb02135d7f6118a
+run_name: nebulous-toad-119
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614845565
+status: 3
+tags: []
+user_id: root
