@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/be7ad649e647447aa3cecca47a9ef3cd/artifacts
+end_time: 1791614824320
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: be7ad649e647447aa3cecca47a9ef3cd
+run_name: enchanting-chimp-832
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614823964
+status: 3
+tags: []
+user_id: root
