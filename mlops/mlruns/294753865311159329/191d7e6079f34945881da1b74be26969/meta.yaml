@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/191d7e6079f34945881da1b74be26969/artifacts
+end_time: 1791614836675
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 191d7e6079f34945881da1b74be26969
+run_name: delightful-hen-721
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614836192
+status: 3
+tags: []
+user_id: root
