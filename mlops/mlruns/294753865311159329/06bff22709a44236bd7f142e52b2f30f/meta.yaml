@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/06bff22709a44236bd7f142e52b2f30f/artifacts
+end_time: 1791616750215
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 06bff22709a44236bd7f142e52b2f30f
+run_name: melodic-fish-853
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791616749766
+status: 3
+tags: []
+user_id: root
