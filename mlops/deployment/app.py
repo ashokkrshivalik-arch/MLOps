@@ -6,7 +6,7 @@ import joblib
 # Ensure st.set_page_config() is the very first Streamlit command
 st.set_page_config(page_title="Tourism Predictor", layout="wide")
 
-# 1. Load Model 
+# 1. Load Model
 # Load the model committed by the pipeline (sits next to this file)
 model_path = os.path.join(os.path.dirname(__file__), "best_medical_insurance_model_v1.joblib")
 model = joblib.load(model_path)
@@ -18,7 +18,7 @@ st.write("Please fill in all 19 parameters to get an accurate prediction.")
 with st.form("prediction_form"):
     # Using 4 columns to fit all 19 features neatly
     c1, c2, c3, c4 = st.columns(4)
-    
+
     with c1:
         age = st.number_input("Age", 18, 100, 30)
         type_of_contact = st.selectbox("Type of Contact", ["Self Enquiry", "Company Invited"])
@@ -70,21 +70,21 @@ if submit:
         "Designation": designation,
         "MonthlyIncome": monthly_income
     }
-    
+
     input_df = pd.DataFrame([data])
 
     # Get the probability
     try:
         # Note: Pipeline applies ColumnTransformer automatically
         prob = model.predict_proba(input_df)[0][1]
-        
+
         st.divider()
         if prob >= 0.45:
             st.success(f"### Result: 🎯 High Potential (Prob: {prob:.2%})")
             st.balloons()
         else:
             st.warning(f"### Result: ⏳ Low Likelihood (Prob: {prob:.2%})")
-            
+
     except Exception as e:
         st.error(f"Prediction Error: {e}")
         st.info("Ensure the column names in app.py match your training data exactly.")
