@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/0f2a8683bd4e47fa98176b4281cf2a7a/artifacts
+end_time: 1791616753079
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 0f2a8683bd4e47fa98176b4281cf2a7a
+run_name: omniscient-mare-908
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791616752656
+status: 3
+tags: []
+user_id: root
