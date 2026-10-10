@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/a301867d049d43d0a90eb547d0ba25b4/artifacts
+end_time: 1791614831771
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: a301867d049d43d0a90eb547d0ba25b4
+run_name: valuable-moose-256
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614831341
+status: 3
+tags: []
+user_id: root
