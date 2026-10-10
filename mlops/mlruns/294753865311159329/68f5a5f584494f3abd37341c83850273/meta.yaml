@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/68f5a5f584494f3abd37341c83850273/artifacts
+end_time: 1791614825054
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 68f5a5f584494f3abd37341c83850273
+run_name: stylish-croc-125
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614824696
+status: 3
+tags: []
+user_id: root
