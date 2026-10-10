@@ -135,5 +135,5 @@ with mlflow.start_run(run_name="Optimized_XGB_Model_PROD_Standalone"):
       print(f"  {key}: {value:.4f}"
 
 # Save next to app.py so the Streamlit app can load it directly
-joblib.dump(best_model, "deployment/best_medical_insurance_model_v1.joblib")
-print("Model saved to deployment/best_medical_insurance_model_v1.joblib")
+joblib.dump(best_model, "deployment/best_tourism_model_v1.joblib")
+print("Model saved to deployment/best_tourism_model_v1.joblib")
