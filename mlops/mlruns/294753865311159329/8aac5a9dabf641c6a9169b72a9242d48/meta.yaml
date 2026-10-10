@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/8aac5a9dabf641c6a9169b72a9242d48/artifacts
+end_time: 1791614835779
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 8aac5a9dabf641c6a9169b72a9242d48
+run_name: skittish-bug-604
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614835408
+status: 3
+tags: []
+user_id: root
