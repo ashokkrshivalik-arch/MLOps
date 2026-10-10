@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/d194b671ae55437f8c31b874f9e7d9c4/artifacts
+end_time: 1791614829584
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: d194b671ae55437f8c31b874f9e7d9c4
+run_name: colorful-boar-433
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614829221
+status: 3
+tags: []
+user_id: root
