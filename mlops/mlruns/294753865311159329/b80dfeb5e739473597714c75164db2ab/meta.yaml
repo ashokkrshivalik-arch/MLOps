@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/b80dfeb5e739473597714c75164db2ab/artifacts
+end_time: 1791616752187
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: b80dfeb5e739473597714c75164db2ab
+run_name: wistful-mule-231
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791616751730
+status: 3
+tags: []
+user_id: root
