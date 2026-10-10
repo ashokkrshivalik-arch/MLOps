@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/aff258e741784ae3b78a44f55d3bfe68/artifacts
+end_time: 1791614831326
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: aff258e741784ae3b78a44f55d3bfe68
+run_name: grandiose-zebra-384
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614830900
+status: 3
+tags: []
+user_id: root
