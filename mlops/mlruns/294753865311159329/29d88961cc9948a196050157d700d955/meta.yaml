@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/29d88961cc9948a196050157d700d955/artifacts
+end_time: 1791614834980
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 29d88961cc9948a196050157d700d955
+run_name: unique-stork-250
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614834620
+status: 3
+tags: []
+user_id: root
