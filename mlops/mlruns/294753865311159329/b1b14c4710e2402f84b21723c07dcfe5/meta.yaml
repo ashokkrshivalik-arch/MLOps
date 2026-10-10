@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/b1b14c4710e2402f84b21723c07dcfe5/artifacts
+end_time: 1791614829206
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: b1b14c4710e2402f84b21723c07dcfe5
+run_name: delicate-bug-610
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614828842
+status: 3
+tags: []
+user_id: root
