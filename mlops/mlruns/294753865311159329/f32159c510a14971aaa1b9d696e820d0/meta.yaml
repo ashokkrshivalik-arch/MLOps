@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/f32159c510a14971aaa1b9d696e820d0/artifacts
+end_time: 1791614845547
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: f32159c510a14971aaa1b9d696e820d0
+run_name: nebulous-cat-939
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614845121
+status: 3
+tags: []
+user_id: root
