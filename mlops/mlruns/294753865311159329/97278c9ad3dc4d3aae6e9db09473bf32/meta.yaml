@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/97278c9ad3dc4d3aae6e9db09473bf32/artifacts
+end_time: 1791616740479
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 97278c9ad3dc4d3aae6e9db09473bf32
+run_name: auspicious-perch-298
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791616740039
+status: 3
+tags: []
+user_id: root
