@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/af5b408afd99477793ea3d00aa030b7b/artifacts
+end_time: 1791616745909
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: af5b408afd99477793ea3d00aa030b7b
+run_name: clumsy-bug-753
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791616745449
+status: 3
+tags: []
+user_id: root
