@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/0bb32cbecd4147d4beb511ea283cf3f0/artifacts
+end_time: 1791614827298
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 0bb32cbecd4147d4beb511ea283cf3f0
+run_name: colorful-robin-63
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791614826939
+status: 3
+tags: []
+user_id: root
