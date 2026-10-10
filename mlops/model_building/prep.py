@@ -19,7 +19,7 @@ df = df.drop(columns=[col for col in cols_to_drop if col in df.columns])
 # 2.2 Standardize Categorical Values
 if 'Gender' in df.columns:
   df['Gender'] = df['Gender'].replace('Fe Male', 'Female')
-  
+
 if 'MaritalStatus' in df.columns:
 # Merging 'Single' into 'Unmarried' to simplify the categories
   df['MaritalStatus'] = df['MaritalStatus'].replace('Single', 'Unmarried')
@@ -52,17 +52,3 @@ ytrain.to_csv("ytrain.csv", index=False)
 ytest.to_csv("ytest.csv", index=False)
 
 print("Data prepared: train/test splits written.")
-
-
-
-
-
-
-
-
-    
-
- 
-
-
-
