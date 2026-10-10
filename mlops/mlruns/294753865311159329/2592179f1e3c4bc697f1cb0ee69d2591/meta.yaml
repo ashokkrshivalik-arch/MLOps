@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/Assignment10/mlops/mlruns/294753865311159329/2592179f1e3c4bc697f1cb0ee69d2591/artifacts
+end_time: 1791616741885
+entry_point_name: ''
+experiment_id: '294753865311159329'
+lifecycle_stage: active
+run_id: 2592179f1e3c4bc697f1cb0ee69d2591
+run_name: nebulous-penguin-270
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791616741483
+status: 3
+tags: []
+user_id: root
