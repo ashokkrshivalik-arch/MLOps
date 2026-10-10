@@ -1,3 +1,4 @@
+
 # for data manipulation
 import pandas as pd
 # for data preprocessing and pipeline creation
@@ -5,9 +6,8 @@ from sklearn.model_selection import train_test_split
 # for converting text data into numerical representation
 from sklearn.preprocessing import LabelEncoder
 
-df = pd.read_csv("data/insurance.csv")
-print("Dataset loaded from hugging face successfully.")
-
+df = pd.read_csv("/content/drive/MyDrive/Assignment10/mlops/data/tourism.csv")
+print("Dataset loaded successfully.")
 
 # 2.1 Remove unnecessary columns
 print("Step 2: Performing data cleaning...")
