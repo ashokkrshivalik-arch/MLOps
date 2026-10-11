@@ -4,13 +4,26 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-# Load the model committed by the pipeline (sits next to this file)
+# Load the model committed to GitHub
 model_path = os.path.join(
     os.path.dirname(__file__),
     "best_tourism_model_v1.joblib"
 )
 
-model = joblib.load(model_path)
+@st.cache_resource
+def load_model():
+    if not os.path.isfile(model_path):
+        raise FileNotFoundError(
+            f"Model file not found: {model_path}"
+        )
+    return joblib.load(model_path)
+
+try:
+    model = load_model()
+    st.success("Model loaded successfully!")
+except Exception as e:
+    st.error(f"Model Loading Error: {e}")
+    st.stop()
 
 # Streamlit UI for Tourism Package Prediction
 st.title("Wellness Tourism Package Prediction App")
