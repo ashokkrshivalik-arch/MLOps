@@ -4,25 +4,55 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-# Load the model committed to GitHub
-model_path = os.path.join(
-    os.path.dirname(__file__),
+st.set_page_config(
+    page_title="Tourism Prediction App",
+    layout="wide"
+)
+
+# Model location
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+MODEL_PATH = os.path.join(
+    BASE_DIR,
     "best_tourism_model_v1.joblib"
 )
 
+# Load the model committed to GitHub
+import os
+import streamlit as st
+import pandas as pd
+import joblib
+
+st.set_page_config(
+    page_title="Tourism Prediction App",
+    layout="wide"
+)
+
+# Model location
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+MODEL_PATH = os.path.join(
+    BASE_DIR,
+    "best_tourism_model_v1.joblib"
+)
+
+# Load model
 @st.cache_resource
 def load_model():
-    if not os.path.isfile(model_path):
+    if not os.path.exists(MODEL_PATH):
         raise FileNotFoundError(
-            f"Model file not found: {model_path}"
+            f"Model not found at: {MODEL_PATH}"
         )
-    return joblib.load(model_path)
+
+    return joblib.load(MODEL_PATH)
 
 try:
     model = load_model()
     st.success("Model loaded successfully!")
+
 except Exception as e:
     st.error(f"Model Loading Error: {e}")
+    st.exception(e)
     st.stop()
 
 # Streamlit UI for Tourism Package Prediction
